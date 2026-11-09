@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TemaPeAcasa {
+public class Tema9Noiembrie {
 
     public static void main() {
         taskMenu();
@@ -39,7 +39,9 @@ public class TemaPeAcasa {
     }
     public static void task3(){
         Scanner input = new Scanner(System.in);
+        System.out.print("Introdu un nr ");
         int nr = input.nextInt();
+
         if(nr > 0) {
             System.out.println("Pozitiv");
         }else System.out.println("Negativ");
