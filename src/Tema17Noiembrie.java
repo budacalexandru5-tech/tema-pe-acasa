@@ -2,7 +2,8 @@ public class Tema17Noiembrie {
     public static void main() {
         //cel mai mare numar din matrice
         int[] arr = {23, 6, 47, 35, 2, 14};
-        System.out.println("Media numerelor tabloului este: " + media(arr));
+        String nrReal = String.format("%.3f", media(arr));
+        System.out.println("Media numerelor tabloului este: " + nrReal);
         System.out.println("Cel mai mare numar din tablou este: " + celMaiMareNr(arr));
     }
     public static double media(int[] arr){
