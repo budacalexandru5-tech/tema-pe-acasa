@@ -20,6 +20,7 @@ public class ATM {
                     break;
                 case 3:
                     valute[0] = extragere(valute[0]);
+//                    valute[0] =  String.format("%.3f", );
                     break;
                 case 4:
 
@@ -47,7 +48,10 @@ public class ATM {
         System.out.println("--------------------");
     }
     public static void sold(double [] balance){
-        System.out.println("Soldul dvs este: " + balance[0] + "MDL, " + balance[1] + " EUR, " + balance[2] + " USD.");
+        String mdl =  String.format("%.2f", balance[0]);
+        String usd =  String.format("%.2f", balance[1]);
+        String eur =  String.format("%.2f", balance[2]);
+        System.out.println("Soldul dvs este: " + mdl + "MDL, " + eur + "EUR, " + usd + "USD.");
     }
     public static double extragere(double balance){
         Scanner input = new Scanner(System.in);
